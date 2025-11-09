@@ -10,3 +10,6 @@
 [submodule "meta-ese"]
 	path = meta-ese
 	url = git@github.com:secdevel/meta-ese.git
+[submodule "meta-cyclonedx"]
+	path = meta-cyclonedx
+	url = https://github.com/savoirfairelinux/meta-cyclonedx.git

@@ -290,3 +290,9 @@ SSTATE_DIR ?= "${TOPDIR}/../sstate-cache"
 WKS_FILE = "sdimage-raspberrypi.wks"
 IMAGE_FSTYPES += "wic.gz wic.bmap"
 ENABLE_UART = "1"
+
+include cve-extra-exclusions.inc
+INHERIT += "cve-check"
+BB_ENV_PASSTHROUGH_ADDITIONS += "NVDCVE_API_KEY"
+
+INHERIT += "cyclonedx-export"
